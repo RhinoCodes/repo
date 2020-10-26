@@ -1,9 +1,9 @@
 package = {
-  name = "pfetc",
+  name = "pfetch",
   version = "source",
   source = "https://github.com/dylanaraps/pfetch.git"
 }
 
 function install()
-  quantum_install("neofetch")
+  quantum_install("pfetch")
 end
