@@ -6,5 +6,5 @@ package = {
 }
 
 function install()
-  quantum_install("pfetch", "6f8d21d7d2196e2aafb8c00c6d79f20c8d6373026eac6f43891bced61f2848eddee1f748a5df90cdf95c5db5eecbc0c933f0ac6625f263bae9e2df51382d8f2c")
+  quantum_install("pfetch", "ca26517d70b63f2766386108e3e491d69d3ab21d49fde3fc7da2b57b329a19ad87df7ff058b9117ed3f75a8fe6f36e48d55e456d31afc7a8b54ad2c7b635a707")
 end
