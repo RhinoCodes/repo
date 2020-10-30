@@ -1,7 +1,8 @@
 package = {
   name = "pfetch",
   version = "source",
-  source = "https://github.com/dylanaraps/pfetch.git"
+  source = "https://github.com/dylanaraps/pfetch/archive/0.6.0.tar.gz",
+  git = false
 }
 
 function install()
