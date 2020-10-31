@@ -5,7 +5,10 @@ package = {
   git = true
 }
 
+function build()
+   make()
+end
+
 function install()
-  make()
   quantum_install("st")
 end
