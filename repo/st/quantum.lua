@@ -10,6 +10,7 @@ package = {
 
 function build()
    make()
+   os.execute("tic -sx st.info")
 end
 
 function install()
