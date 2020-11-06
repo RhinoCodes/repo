@@ -10,5 +10,5 @@ function build()
 end
 
 function install()
-  os.execute("make install prefix=~/quantum-lua/bindir/lua/2.9.5")
+  os.execute("make install prefix=~/quantum-lua/bindir/git/2.9.5", 1)
 end
