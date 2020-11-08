@@ -2,13 +2,13 @@
 ------------------------------------
 ## Tutorial
 First you need to clone the repo:<br>
-`git clone https://github.com/quantum-package-manager/repo.git`
+`git clone https://github.com/quantum-package-manager/repo.git`<br>
 Then you need to change into the repository directory:<br>
-`cd repo/repo`
+`cd repo/repo`<br>
 Then make a directory for the package:<br>
-`mkdir repo/repo/foo`
+`mkdir repo/repo/foo`<br>
 Then change into that:<br>
-`cd foo`
+`cd foo`<br>
 Then, in your packages directory, make a new file called `quantum.lua`<br>
 Now, we define the package:<br>
 For a package downloaded from git,<br>
