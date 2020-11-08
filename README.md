@@ -1,6 +1,7 @@
 # Quantum's Package Repository
-------------------------------------
+--------------------------------
 Quantum uses Lua for buildfiles, this is where the buildfiles are hosted.
+
 ------------------------------------
 ## Tutorial
 First you need to clone the repo:<br>
