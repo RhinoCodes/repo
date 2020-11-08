@@ -1,6 +1,7 @@
 # Quantum's Package Repository
 --------------------------------
-Quantum uses Lua for buildfiles, this is where the buildfiles are hosted.
+Quantum uses Lua for buildfiles, this is where the buildfiles are hosted.<br>
+Learn about the Quantum [here](https://github.com/quantum-package-manager/quantum-lua)
 
 ------------------------------------
 ## Tutorial
