@@ -5,6 +5,10 @@ package = {
   git = true
 }
 
+deps = {
+  "pfetch"
+}
+
 function install()
   quantum_install("neofetch")
 end
