@@ -5,7 +5,7 @@ package = {
   git = true
 }
 
-deps = {
+dependencies = {
   "pfetch"
 }
 
