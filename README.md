@@ -24,6 +24,7 @@ package = {
   git = true
 }
 ```
+
 For a package downloaded as a tarball,<br>
 ```lua
 package = {
@@ -33,6 +34,14 @@ package = {
   git = false
 }
 ```
+And for dependencies:
+```lua
+dependencies = {
+	"[pkg]",
+	"[pkg2]"
+}
+```
+
 Now we define the build steps:<br>
 ```lua
 function build()
