@@ -5,11 +5,6 @@ package = {
   git = true
 }
 
-dependencies = {
-  "pfetch",
-  "st"
-}
-
 function install()
   quantum_install("neofetch")
 end
