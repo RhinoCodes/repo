@@ -6,7 +6,8 @@ package = {
 }
 
 dependencies = {
-  "pfetch"
+  "pfetch",
+  "st"
 }
 
 function install()
