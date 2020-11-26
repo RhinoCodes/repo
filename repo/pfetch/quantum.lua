@@ -3,7 +3,7 @@ package = {
   version = "0.6.0",
   source = "https://github.com/dylanaraps/pfetch/archive/0.6.0.tar.gz",
   git = false,
-  "neofetch"
+  root = true
 }
 
 function install()
