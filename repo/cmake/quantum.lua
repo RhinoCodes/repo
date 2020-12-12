@@ -12,5 +12,9 @@ end
 
 function install()
     os.execute("make install DESTDIR=" .. install_dir .. "/bindir/cmake/3.9.1")
-    quantum_install("usr/local/bin/*")
+    os.execute("echo $(pwd) >> ~/quantum/log")
+    quantum_install("usr/local/bin/cmake", true)
+    quantum_install("usr/local/bin/ctest", true)
+    quantum_install("usr/local/bin/cpack", true)
+    quantum_install("usr/local/bin/ccmake", true)
 end
