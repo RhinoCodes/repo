@@ -7,7 +7,7 @@ package = {
 }
 
 function build()
-    os.execute("make x86_64-defconfig")
+    os.execute("make x86_64_defconfig")
     make()
 end
 
