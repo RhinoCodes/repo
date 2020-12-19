@@ -17,6 +17,6 @@ function install()
     os.execute("cp -v arch/x86/boot/bzImage " .. install_dir .. "/boot/vmlinuz-5.4.77")
     os.execute("cp -v System.map " .. install_dir .. "/boot/System.map-5.4.77")
     os.execute("cp -v .config " .. install_dir .. "/boot/config-5.4.77")
-    os.execute("ln -s " .. install_dir .. "/boot/* /boot/")
+    os.execute("ln -s " .. install_dir .. "/boot/{vmlinuz-5.4.77,System.map-5.4.77,config-5.4.77} /boot/")
     os.execute("ln -s " .. install_dir .. "/lib/modules/5.4.77 /usr/lib/modules/5.4.77")
 end 
