@@ -12,7 +12,7 @@ function build()
 end
 
 function install()
-    os.execute("make INSTALL_MOD_PATH=" .. install_dir .. modules_install" )
+    os.execute("make INSTALL_MOD_PATH=" .. install_dir .. " modules_install" )
     os.execute("cp -v arch/x86/boot/bzImage " .. install_dir .. "/boot/vmlinuz-5.4.77")
     os.execute("cp -v System.map " .. install_dir .. "/boot/System.map-5.4.77")
     os.execute("cp -v .config " .. install_dir .. "/boot/config-5.4.77")
