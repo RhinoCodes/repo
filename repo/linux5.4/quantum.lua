@@ -20,3 +20,7 @@ function install()
     os.execute("ln -s " .. install_dir .. "/boot/{vmlinuz-5.4.77,System.map-5.4.77,config-5.4.77} /boot/")
     os.execute("ln -s " .. install_dir .. "/lib/modules/5.4.77 /usr/lib/modules/5.4.77")
 end 
+
+function uninstall()
+	os.execute("rm -rf " .. install_dir .. " /boot/{vmlinuz-5.4.77,System.map-5.4.77,config-5.4.77}")
+end
