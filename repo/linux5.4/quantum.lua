@@ -22,5 +22,5 @@ function install()
 end 
 
 function uninstall()
-	os.execute("rm -rf " .. install_dir .. " /boot/{vmlinuz-5.4.77,System.map-5.4.77,config-5.4.77}")
+	os.execute("rm -rf " .. install_dir .. "/.. /boot/{vmlinuz-5.4.77,System.map-5.4.77,config-5.4.77}")
 end
