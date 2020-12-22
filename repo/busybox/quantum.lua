@@ -7,19 +7,19 @@ package = {
 }
 
 function build()
-    print("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin")
-    -- os.execute("make defconfig")
-    -- make()
+    os.execute("make defconfig")
+    make()
 end
 
 function install()
-    --os.execute("make CONFIG_PREFIX=" .. install_dir .. " install")
-    --os.execute("mkdir -p " .. root .. "/{bin,sbin,usr,usr/bin,usr/sbin}")
-    --os.execute("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin")
-    --os.execute("ln -s " .. install_dir .. "/sbin/* " .. root .. "/sbin")
-    --os.execute("ln -s " .. install_dir .. "/usr/sbin/* " .. root .. "/usr/sbin")
-    --os.execute("ln -s " .. install_dir .. "/usr/bin/* " .. root .. "/usr/bin")
-    --os.execute("ln -s " .. install_dir .. "/linuxrc " .. root .. "/linuxrc")
+    os.execute("make CONFIG_PREFIX=" .. install_dir .. " install")
+    os.execute("mkdir -p " .. root .. "/{bin,sbin,usr,usr/bin,usr/sbin}")
+    os.execute("cp -r " .. install_dir .. "/../../../builddir/busybox/local/* ".. install_dir)
+    os.execute("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin")
+    os.execute("ln -s " .. install_dir .. "/sbin/* " .. root .. "/sbin")
+    os.execute("ln -s " .. install_dir .. "/usr/sbin/* " .. root .. "/usr/sbin")
+    os.execute("ln -s " .. install_dir .. "/usr/bin/* " .. root .. "/usr/bin")
+    os.execute("ln -s " .. install_dir .. "/linuxrc " .. root .. "/linuxrc")
 end
 
 function uninstall()
