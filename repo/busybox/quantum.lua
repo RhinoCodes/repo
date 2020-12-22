@@ -14,6 +14,7 @@ end
 function install()
     os.execute("make CONFIG_PREFIX=" .. install_dir .. " install")
     os.execute("mkdir -p " .. root .. "/{bin,sbin,usr,usr/bin,usr/sbin}")
+    print(root)
     os.execute("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin")
     os.execute("ln -s " .. install_dir .. "/sbin/* " .. root .. "/sbin")
     os.execute("ln -s " .. install_dir .. "/usr/sbin/* " .. root .. "/usr/sbin")
