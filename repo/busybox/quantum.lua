@@ -7,7 +7,7 @@ package = {
 }
 
 function build()
-    print("\n HI " .. root .. "a\n")
+    print("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin")
     -- os.execute("make defconfig")
     -- make()
 end
