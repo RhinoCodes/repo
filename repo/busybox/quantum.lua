@@ -7,7 +7,7 @@ package = {
 }
 
 function build()
-    print(root)
+    -- print(root)
     -- os.execute("make defconfig")
     -- make()
 end
