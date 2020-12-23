@@ -19,7 +19,7 @@ function install()
     os.execute("ln -s " .. install_dir .. "/sbin/* " .. root .. "/sbin/")
     os.execute("ln -s " .. install_dir .. "/usr/sbin/* " .. root .. "/usr/sbin/")
     os.execute("ln -s " .. install_dir .. "/usr/bin/* " .. root .. "/usr/bin/")
-    os.execute("ln -s " .. install_dir .. "/linuxrc " .. root .. "/linuxrc/")
+    os.execute("ln -s " .. install_dir .. "/linuxrc " .. root .. "/linuxrc")
 end
 
 function uninstall()
