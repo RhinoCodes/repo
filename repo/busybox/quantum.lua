@@ -13,13 +13,13 @@ end
 
 function install()
     os.execute("make CONFIG_PREFIX=" .. install_dir .. " install")
-    print(install_dir)
+    print("mkdir -p " .. root .. "/{bin,sbin,usr,usr/bin,usr/sbin}")
     os.execute("mkdir -p " .. root .. "/{bin,sbin,usr,usr/bin,usr/sbin}")
-    os.execute("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin")
-    os.execute("ln -s " .. install_dir .. "/sbin/* " .. root .. "/sbin")
-    os.execute("ln -s " .. install_dir .. "/usr/sbin/* " .. root .. "/usr/sbin")
-    os.execute("ln -s " .. install_dir .. "/usr/bin/* " .. root .. "/usr/bin")
-    os.execute("ln -s " .. install_dir .. "/linuxrc " .. root .. "/linuxrc")
+    os.execute("ln -s " .. install_dir .. "/bin/* " .. root .. "/bin/")
+    os.execute("ln -s " .. install_dir .. "/sbin/* " .. root .. "/sbin/")
+    os.execute("ln -s " .. install_dir .. "/usr/sbin/* " .. root .. "/usr/sbin/")
+    os.execute("ln -s " .. install_dir .. "/usr/bin/* " .. root .. "/usr/bin/")
+    os.execute("ln -s " .. install_dir .. "/linuxrc " .. root .. "/linuxrc/")
 end
 
 function uninstall()
